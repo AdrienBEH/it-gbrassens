@@ -1,2 +1,0 @@
-# it-gbrassens
-Ce site est un projet bénévole. Sa conception est inspiré de la charte graphique <a href="https://www.w3schools.com/">www.w3schools.com</a>. Initialement développé pour le <a href="http://www.ville-bondy.fr/fileadmin/user_upload/Sante_solidarite/Centres_sociaux/Plaquette-brassens_2016-mai2017.pdf">centre socioculturel Georges Brassens</a> de Bondy dans le but de fournir un site fonctionnel et simplifié pour la rédaction d'articles des débutants en développement web, sa réappropriation est disponible librement.
