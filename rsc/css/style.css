@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
 a {
@@ -48,6 +49,11 @@ pre {
 
 .opacity {
     opacity: 0.6;
+}
+
+article {
+    margin-top: 15px;
+/*    text-align: justify;*/
 }
 
 /***** NAVBAR *****/
@@ -188,25 +194,31 @@ li.dropdown {
 #menu-left li h2 {
     display: block;
     color: #000;
-    padding: 6px 16px 4px 16px;
+    padding: 6px 16px 4px 16px; 
+    overflow: hidden;
 }
 
 #menu-left li h2 {
     margin-top: 15px;
 }
 
+#menu-left li a {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
 #menu-left li a:hover {
-    background-color: #CCC;
+    background-color: #DDD;
+    overflow: visible;
+    white-space: inherit;
 }
 /***** !MENU ****/
 
 /***** ARTICLE *****/
 section {
-    margin-top: 36px;
     margin-left: 200px;
     min-height: calc(100vh - 36px - 40px - 15px);
-    padding: 40px 200px 0px 15px;
-    text-align: justify;
+    padding: 38px 200px 0px 15px;
 }
 
 article > *:not(:first-child) {
@@ -252,3 +264,66 @@ footer #column a {
     margin: 3px;
 }
 /***** !FOOTER ****/
+
+/***** TABLE *****/
+.key {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #DDD;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+tr:hover {
+    background-color: #DDD;
+}
+/***** !TABLE ****/
+
+/***** BREADCRUMB *****/
+#breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+#breadcrumb li {
+    display: inline;
+}
+
+#breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+#breadcrumb li a {
+    color: green;
+}
+/***** !BREADCRUMB ****/
+
+/***** UPDATE *****/
+time[pubdate] {
+    float: right;
+    margin: 8px 16px ;
+}
+/***** !UPDATE ****/

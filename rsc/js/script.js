@@ -18,16 +18,11 @@ function ajax() {
     var pathOnly = pathFile.replace(fileName, '');
     var pathModule = pathOnly;
 
-//    console.log("fileName: " + fileName);
-//    console.log("pathOnly: " + pathOnly);
-//    console.log("pathFile: " + pathFile);
-//    console.log("pathModule: " + pathModule);
-
     if (pathOnly == "/") {
-        fileName = "index.html"; //console.log("\nfileName == null\n\nfileName: " + fileName);
-        pathOnly = "/"; //console.log("pathOnly: " + pathOnly);
-        pathFile = pathOnly + fileName; //console.log("pathFile: " + pathFile);
-        pathModule = "/modules/home/"; //console.log("pathModule: " + pathModule);
+        fileName = "index.html";
+        pathOnly = "/";
+        pathFile = pathOnly + fileName;
+        pathModule = "/modules/home/";
         var pathIndex = null;
     }
 
@@ -35,7 +30,6 @@ function ajax() {
         if (pathOnly.includes("home")) {
             pathOnly = "/";
         }
-//        console.log("pathOnly + index.html: " + pathOnly + "index.html");
         $("a[href='" + pathOnly + "index.html" + "']").addClass("active");
     });
 
